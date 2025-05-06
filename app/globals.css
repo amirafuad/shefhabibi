@@ -1,26 +1,327 @@
-@import "tailwindcss";
+.container {
+  animation: fadeIn 1.5s ease-in-out;
+}
 
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Proper font-face declaration */
+@font-face {
+  font-family: "Amiri";
+  src: url("/fonts/Zain-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Define the CSS variable for Amiri font */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-amiri: "Amiri", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Page background */
+.page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #dabd91; /* Fallback color */
+  background-image: url("/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Shef Habibi Styles */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--font-amiri), sans-serif;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.logo {
+  margin-bottom: 2px;
+  margin-top: 12px;
+}
+
+.subtitle {
+  white-space: nowrap; 
+  font-size: 1.4rem;
+  color: #3f1b08;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1.5;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-family: var(--font-amiri), sans-serif;
+}
+
+.contact {
+  font-size: 1.0rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: #3f1b08;
+  line-height: 1.5;  
+  display: inline-flex;
+  margin-top: -60px;
+  width: 100%;
+  font-family: var(--font-amiri);
+  margin-bottom: 1rem;
+}
+
+.whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem; /* Small, clean gap */
+  vertical-align: middle;
+}
+
+.wa-icon {
+  height: 1.1rem;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  top: 0; /* Reset manual offsets */
+  margin: 0; /* Remove extra spacing */
+  margin-bottom: 8px;
+}
+.wa-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.19rem;
+  
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.socials a {
+  transition: transform 0.3s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  font-size: 0.9rem;
+  color: #3f1b08;
+  padding-top: 27px;
+  font-family: var(--font-amiri), sans-serif;
+}
+
+
+@media (max-width: 800px) {
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .page-wrapper {
+    background-image: url("/bg2.png");
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Key to pushing footer down */
+    font-family: var(--font-amiri), sans-serif;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Consistent spacing between sections */
+    flex-grow: 1; /* So this area fills space */
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    white-space: normal;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #3f1b08;
+    font-family: var(--font-amiri), sans-serif;
+  }
+
+  .contact {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #3f1b08;
+    white-space: normal;
+    font-family: var(--font-amiri), sans-serif;
+  }
+
+  .whatsapp {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .wa-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    /* other properties */
+  }
+
+  .socials {
+    display: flex;
+    margin-top: 12rem;
+  }
+  .footer {
+    font-size: 0.9rem;
+    color: #3f1b08;
+    padding-top: 27px;
+    font-family: var(--font-amiri), sans-serif;
+  }
+  
+}
+
+/* iPad Pro and large tablets */
+@media (min-width: 769px) and (max-width: 991px) {
+  .wa-inline {
+    font-size: 0.9rem;
+    gap: 0.15rem;
+  }
+
+  .contact {
+    font-size: 0.9rem;
+    margin-top: -40px;
+  }
+
+  .logo {
+    max-width: 350px;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* iPad and medium tablets */
+@media (min-width: 601px) and (max-width: 768px) {
+  .wa-inline {
+    font-size: 0.85rem;
+    gap: 0.1rem;
+  }
+
+  .contact {
+    font-size: 0.85rem;
+    margin-top: -30px;
+  }
+
+  .logo {
+    max-width: 300px;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large phones and small tablets */
+@media (min-width: 481px) and (max-width: 600px) {
+  .wa-inline {
+    font-size: 0.8rem;
+    gap: 0.1rem;
+    white-space: nowrap;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: -20px;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 360px) {
+  .wa-inline {
+    font-size: 0.7rem;
+    gap: 0.05rem;
+    white-space: nowrap;
+  }
+
+  .contact {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .footer {
+    margin-top: auto;
+    padding-bottom: 15px;
+  }
 }
