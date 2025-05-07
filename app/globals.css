@@ -131,7 +131,8 @@ a {
 .socials {
   display: flex;
   gap: 2rem;
-  margin-top: 1rem;
+  margin-top: 1rem; /* Add some top space on desktop too */
+  justify-content: center;
 }
 
 .socials a {
@@ -154,7 +155,7 @@ a {
   html, body {
     height: 100%;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
   .page-wrapper {
@@ -249,6 +250,20 @@ a {
   .subtitle {
     font-size: 1.2rem;
   }
+  .socials {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem; /* Add some top space on desktop too */
+  justify-content: center;
+}
+
+.socials a {
+  transition: transform 0.3s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
 }
 
 /* iPad and medium tablets */
@@ -270,6 +285,20 @@ a {
   .subtitle {
     font-size: 1.1rem;
   }
+  .socials {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem; /* Add some top space on desktop too */
+  justify-content: center;
+}
+
+.socials a {
+  transition: transform 0.3s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
 }
 
 /* Large phones and small tablets */
