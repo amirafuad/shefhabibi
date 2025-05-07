@@ -153,7 +153,7 @@ a {
 
 @media (max-width: 800px) {
   html, body {
-    
+    height:100%;
     overflow-x: hidden;
     overflow-y: hidden;
   }
@@ -165,7 +165,6 @@ a {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Key to pushing footer down */
     font-family: var(--font-amiri), sans-serif;
     padding: 2rem 1rem;
     box-sizing: border-box;
