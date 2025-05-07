@@ -100,7 +100,7 @@ a {
   margin: 2rem 0;
   color: #3f1b08;
   line-height: 1.5;  
-  display: inline-flex;
+  display: block;
   margin-top: -60px;
   width: 100%;
   font-family: var(--font-amiri);
