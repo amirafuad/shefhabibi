@@ -1,4 +1,4 @@
-.container {
+.container,.footer {
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -14,9 +14,12 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -40,6 +43,8 @@ a {
 
 /* Page background */
 .page-wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
   min-height: 100vh;
   width: 100%;
   background-color: #dabd91; /* Fallback color */
@@ -47,24 +52,22 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  display: flex;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background-attachment: fixed;
   position: relative;
   
 }
 
 /* Shef Habibi Styles */
 .container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-family: var(--font-amiri), sans-serif;
 }
@@ -144,18 +147,20 @@ a {
 }
 
 .footer {
+  flex-shrink: 3;
+  text-align: center;
+  padding: 1rem 0;
   font-size: 0.9rem;
   color: #3f1b08;
-  padding-top: 27px;
   font-family: var(--font-amiri), sans-serif;
 }
 
 
 @media (max-width: 800px) {
   html, body {
-    height:100%;
+    height: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
   }
 
   .page-wrapper {
@@ -165,12 +170,14 @@ a {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Key to pushing footer down */
     font-family: var(--font-amiri), sans-serif;
     padding: 2rem 1rem;
     box-sizing: border-box;
   }
 
   .container {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,7 +231,7 @@ a {
   .footer {
     font-size: 0.9rem;
     color: #3f1b08;
-    padding-top: 30px;
+    padding-top: 27px;
     font-family: var(--font-amiri), sans-serif;
   }
   
@@ -249,20 +256,6 @@ a {
   .subtitle {
     font-size: 1.2rem;
   }
-  .socials {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1rem; /* Add some top space on desktop too */
-  justify-content: center;
-}
-
-.socials a {
-  transition: transform 0.3s;
-}
-
-.socials a:hover {
-  transform: scale(1.2);
-}
 }
 
 /* iPad and medium tablets */
@@ -284,20 +277,6 @@ a {
   .subtitle {
     font-size: 1.1rem;
   }
-  .socials {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1rem; /* Add some top space on desktop too */
-  justify-content: center;
-}
-
-.socials a {
-  transition: transform 0.3s;
-}
-
-.socials a:hover {
-  transform: scale(1.2);
-}
 }
 
 /* Large phones and small tablets */
