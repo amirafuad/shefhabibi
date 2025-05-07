@@ -89,22 +89,20 @@ a {
   margin: 1rem 0;
   line-height: 1.5;
   display: block;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
   font-family: var(--font-amiri), sans-serif;
 }
 
 .contact {
-  font-size: 1.0rem;
+  font-size: 1rem;
   text-align: center;
-  margin: 2rem 0;
   color: #3f1b08;
-  line-height: 1.5;  
-  display: block;
-  margin-top: -60px;
+  line-height: 1.5;
+  font-family: var(--font-amiri), sans-serif;
+  margin-top: 0.5rem; /* or adjust as needed */
+  margin-bottom: 2rem;
   width: 100%;
-  font-family: var(--font-amiri);
-  margin-bottom: 1rem;
 }
 
 .whatsapp {
@@ -133,7 +131,7 @@ a {
 .socials {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .socials a {
@@ -147,7 +145,7 @@ a {
 .footer {
   font-size: 0.9rem;
   color: #3f1b08;
-  padding-top: 27px;
+  padding-top: 30px;
   font-family: var(--font-amiri), sans-serif;
 }
 
