@@ -21,9 +21,10 @@
             </div>
 
            <div className="contact">
-            <a href="https://wa.me/6281212571218" target="_blank" rel="noopener noreferrer" className="whatsapp">
-              <div className="wa-inline"> Tap to pre-order via WhatsApp at 0812 1257 1218
-            </a>
+            <div className="wa-inline"> 
+              <a href="https://wa.me/6281212571218" target="_blank" rel="noopener noreferrer" className="whatsapp">
+              Tap to pre-order via WhatsApp at 0812 1257 1218
+                </a>
                 </div>
               </div>
             <div className="socials">
