@@ -167,7 +167,7 @@ a {
     background-image: url("/bg2.png");
     background-size: cover;
     background-position: center top;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Key to pushing footer down */
@@ -182,7 +182,6 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem; /* Consistent spacing between sections */
-    flex-grow: 1; /* So this area fills space */
     text-align: center;
     padding-top: 1rem;
   }
@@ -192,7 +191,7 @@ a {
     max-width: 300px;
     height: auto;
     margin-bottom: 1rem;
-    margin-top:-2.5rem;
+    margin-top: -1.5rem;
   }
 
   .subtitle {
@@ -234,7 +233,7 @@ a {
     color: #3f1b08;
     padding-top: 27px;
     font-family: var(--font-amiri), sans-serif;
-    padding-bottom:1rem;
+    padding-bottom: 1rem;
   }
   
 }
