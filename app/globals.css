@@ -193,7 +193,7 @@ a {
     max-width: 300px;
     height: auto;
     margin-bottom: 1rem;
-    margin-top: 2rem; /* move it up a bit */
+    margin-top: 1rem; /* move it up a bit */
   }
 
   .subtitle {
@@ -226,7 +226,7 @@ a {
 
   .socials {
     display: flex;
-    margin-top: 16rem;
+    margin-top: 13rem;
     
   }
 
