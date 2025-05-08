@@ -258,6 +258,13 @@ a {
   .subtitle {
     font-size: 1.2rem;
   }
+  .footer {
+    font-size: 0.9rem;
+    color: #3f1b08;
+    padding-top: 27px;
+    font-family: var(--font-amiri), sans-serif;
+    padding-bottom: 1rem;
+  }
 }
 
 /* iPad and medium tablets */
