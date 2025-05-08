@@ -134,7 +134,7 @@ a {
 .socials {
   display: flex;
   gap: 2rem;
-  margin-top: 1rem; /* Add some top space on desktop too */
+  margin-top: 3rem; /* Add some top space on desktop too */
   justify-content: center;
 }
 
@@ -153,7 +153,7 @@ a {
   font-size: 0.9rem;
   color: #3f1b08;
   font-family: var(--font-amiri), sans-serif;
-  margin-top:5rem;
+
 }
 
 
