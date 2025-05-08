@@ -184,7 +184,7 @@ a {
     gap: 1.5rem; /* Consistent spacing between sections */
     flex-grow: 1; /* So this area fills space */
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   .logo {
