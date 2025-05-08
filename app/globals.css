@@ -234,6 +234,7 @@ a {
     color: #3f1b08;
     padding-top: 27px;
     font-family: var(--font-amiri), sans-serif;
+    padding-bottom:1rem;
   }
   
 }
