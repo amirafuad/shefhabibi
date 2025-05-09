@@ -307,14 +307,11 @@ a {
     flex-direction: column;
       flex:1;
   }
-
   /* Create a spacer to push content to top and social icons to bottom */
   .spacer {
     flex-grow: 1;
     
-  }
-
-  
+  } 
   .subtitle {
     font-size: 1.5rem; /* Smaller font size to fit on one line */
     line-height: 1.4;
@@ -323,6 +320,8 @@ a {
     max-width: 95%;
     word-wrap: break-word;
     padding: 0 0.5rem;
+    white-space: normal;    
+    text-align:center;
   }
   .contact {
     font-size: 1.4rem;
