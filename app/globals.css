@@ -47,7 +47,7 @@ a {
   grid-template-rows: 1fr auto;
   min-height: 100vh;
   width: 100%;
-  background-color: #dabd91; /* Fallback color */
+  background-color: #dabd91; 
   background-image: url("/bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -103,7 +103,7 @@ a {
   color: #3f1b08;
   line-height: 1.5;
   font-family: var(--font-amiri), sans-serif;
-  margin-top: 0.5rem; /* or adjust as needed */
+  margin-top: 0.5rem; 
   margin-bottom: 2rem;
   width: 100%;
 }
@@ -111,7 +111,7 @@ a {
 .whatsapp {
   display: inline-flex;
   align-items: center;
-  gap: 0.1rem; /* Small, clean gap */
+  gap: 0.1rem; 
   vertical-align: middle;
 }
 
@@ -120,8 +120,8 @@ a {
   width: auto;
   display: inline-block;
   position: relative;
-  top: 0; /* Reset manual offsets */
-  margin: 0; /* Remove extra spacing */
+  top: 0; 
+  margin: 0; 
   margin-bottom: 8px;
 }
 .wa-inline {
@@ -194,7 +194,7 @@ a {
     max-width: 300px;
     height: auto;
     margin-bottom: 1rem;
-    margin-top: 1rem; /* move it up a bit */
+    margin-top: 1rem; 
   }
 
   .subtitle {
@@ -237,8 +237,7 @@ a {
   }
 
   .footer {
-
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     font-size: 0.9rem;
     color: #3f1b08;
    
