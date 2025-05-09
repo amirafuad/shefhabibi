@@ -165,18 +165,17 @@ a {
     padding: 0;
     overflow-y: auto; /* Ensure scrolling is enabled */
   }
-
-  height: 100dvh;
+.page-wrapper {
+    min-height: 100dvh; /* Let's try this again, combined with auto for content */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-image: url("/bg2.png");
     background-size: cover;
     background-position: center top;
     font-family: var(--font-amiri), sans-serif;
     padding: 2rem 1rem;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: hidden; /* Let's try keeping this for background */
 }
 
   .container {
