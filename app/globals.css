@@ -314,7 +314,7 @@ a {
 
   
   .subtitle {
-    font-size: 1.1rem; /* Smaller font size to fit on one line */
+    font-size: 1.3rem; /* Smaller font size to fit on one line */
     line-height: 1.4;
     color: #3f1b08;
     margin-top: -0.25rem;
@@ -323,7 +323,7 @@ a {
     padding: 0 0.5rem;
   }
   .contact {
-    font-size: 0.7rem;
+    font-size: 1/1rem;
     text-align: center;
     color: #3f1b08;
     white-space: no-wrap;
@@ -337,7 +337,7 @@ a {
     gap: 1.25rem;
     justify-content: center;
     margin-top: auto; /* Push to bottom of container */
-    margin-bottom: 1.5rem; /* Space between socials and footer */
+    margin-bottom: 0.5rem; /* Space between socials and footer */
   }
 
   .socials img {
