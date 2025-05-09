@@ -34,7 +34,7 @@
                 </a>
               </div>
             </div>
-  
+            <div className="spacer"></div>
             <div className="socials">
               <a href="https://www.instagram.com/shefhabibi" target="_blank" rel="noopener noreferrer">
                 <Image src="/instagram.png" alt="Instagram" width={30} height={30} />
