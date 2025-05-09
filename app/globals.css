@@ -317,7 +317,7 @@ a {
   display: block;
 }
   .subtitle {
-    font-size: 1.5rem; /* Smaller font size to fit on one line */
+    font-size: 1.55rem; /* Smaller font size to fit on one line */
     line-height: 1.4;
     color: #3f1b08;
     margin-top: -0.25rem;
@@ -341,8 +341,7 @@ a {
     display: flex;
     gap: 1.25rem;
     justify-content: center;
-    margin-top: 0.5rem; /* Push to bottom of container */
-    margin-bottom: 1rem; /* Space between socials and footer */
+    margin-bottom: 3rem; /* Space between socials and footer */
   }
 
   .socials img {
