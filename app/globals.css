@@ -134,7 +134,7 @@ a {
 .socials {
   display: flex;
   gap: 2rem;
-  margin-top: 3rem; /* Add some top space on desktop too */
+  margin-bottom: 0.5rem;
   justify-content: center;
 }
 
