@@ -199,7 +199,7 @@ a {
 
   .subtitle {
     white-space: normal;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     color: #3f1b08;
     margin-top:-0.5rem;
@@ -298,28 +298,32 @@ a {
   .page-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
   }
 
   .container {
+    flex: 1;
     display: flex;
     flex-direction: column;
+  }
+
+  /* Create a spacer to push content to top and social icons to bottom */
+  .spacer {
     flex-grow: 1;
-    
-  } 
+    min-height: 20px;
+  }
+
+  
   .subtitle {
-    font-size: 1.7rem; /* Smaller font size to fit on one line */
+    font-size: 1.1rem; /* Smaller font size to fit on one line */
     line-height: 1.4;
     color: #3f1b08;
     margin-top: -0.25rem;
     max-width: 95%;
     word-wrap: break-word;
     padding: 0 0.5rem;
-    white-space: normal;    
-    text-align:center;
   }
   .contact {
-    font-size: 1.4rem;
+    font-size: 0.7rem;
     text-align: center;
     color: #3f1b08;
     white-space: no-wrap;
@@ -332,7 +336,8 @@ a {
     display: flex;
     gap: 1.25rem;
     justify-content: center;
-    margin-bottom: 3rem; /* Space between socials and footer */
+    margin-top: auto; /* Push to bottom of container */
+    margin-bottom: 1.5rem; /* Space between socials and footer */
   }
 
   .socials img {
@@ -341,10 +346,11 @@ a {
   }
 
   .footer {
+    padding-top: 0;
     padding-bottom: 1rem;
     font-size: 0.8rem;
     color: #3f1b08;
-    
+    margin-top: 0; /* Remove margin to keep close to socials */
   }
 
 
