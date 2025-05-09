@@ -199,17 +199,24 @@ a {
     margin-top: 1rem; 
   }
 
-  .subtitle {
-    white-space: normal;
-    font-size: 1.7rem;
-    line-height: 1.5;
-    color: #3f1b08;
-    margin-top:-0.5rem;
-     max-width: 90%; /* 👈 add this */
-  }
+ .subtitle {
+  white-space: normal; /* Allows text to wrap */
+  font-size: 1.4rem;
+  color: #3f1b08;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1.5;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
+  font-family: var(--font-amiri), sans-serif;
+  max-width: 90%; /* You might need to adjust this value */
+  margin-left: auto;
+  margin-right: auto;
+}
 
   .contact {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     color: #3f1b08;
     white-space: normal;
