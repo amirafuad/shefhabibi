@@ -158,24 +158,27 @@ a {
 
 
 @media (max-width: 800px) {
-  html, body {
-    height: 100dvh;
-    overflow: hidden;
+   html, body {
+    min-height: 100dvh; /* Use min-height to allow growth */
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    overflow-y: auto; /* Ensure scrolling is enabled */
   }
 
   .page-wrapper {
-    height: 100dvh;
+    min-height: auto; /* Allow page-wrapper to grow with content */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    /* Remove or change justify-content if it's causing issues */
+    /* justify-content: flex-start; */
     background-image: url("/bg2.png");
     background-size: cover;
     background-position: center top;
     font-family: var(--font-amiri), sans-serif;
     padding: 2rem 1rem;
     box-sizing: border-box;
+    overflow: hidden; /* Keep for background, but ensure min-height: auto; */
   }
 
   .container {
