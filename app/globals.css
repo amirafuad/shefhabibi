@@ -199,7 +199,7 @@ a {
 
   .subtitle {
     white-space: normal;
-    font-size: 1.5rem;
+    font-size: 1.6em;
     line-height: 1.5;
     color: #3f1b08;
     margin-top:-0.5rem;
@@ -237,7 +237,7 @@ a {
   }
 
   .footer {
-    padding: 2.5rem 0;
+    padding: 3.5rem 0;
     font-size: 0.9rem;
     color: #3f1b08;
    
