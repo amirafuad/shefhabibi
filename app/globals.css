@@ -158,25 +158,26 @@ a {
 
 
 @media (max-width: 800px) {
-   html, body {
-    min-height: 100dvh; /* Use min-height to allow growth */
-    overflow-x: hidden;
+  html, body {
+    height: 100dvh;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    overflow-y: auto; /* Ensure scrolling is enabled */
   }
-.page-wrapper {
-    min-height: 100dvh; /* Let's try this again, combined with auto for content */
+
+  .page-wrapper {
+    height: 100dvh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-image: url("/bg2.png");
     background-size: cover;
     background-position: center top;
     font-family: var(--font-amiri), sans-serif;
     padding: 2rem 1rem;
     box-sizing: border-box;
-    overflow: hidden; /* Let's try keeping this for background */
-}
+    overflow: hidden;
+  }
 
   .container {
     flex: 1;
@@ -196,25 +197,35 @@ a {
     margin-top: 1rem; 
   }
 
- .subtitle {
-    white-space: pre-line; /* Preserve line breaks and wrap */
+  .subtitle {
+    white-space: normal;
     font-size: 1.7rem;
     line-height: 1.5;
     color: #3f1b08;
-    margin-top: -0.5rem;
-    max-width: 100%; /* Try a slightly smaller max-width */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; /* Ensure text remains centered */
-}
+    margin-top:-0.5rem;
+     max-width: 90%; /* 👈 add this */
+  }
 
   .contact {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
     color: #3f1b08;
     white-space: normal;
   }
 
+  .whatsapp {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .wa-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+  }
 .spacer {
   flex-grow: 1;
 }
@@ -253,11 +264,11 @@ a {
     font-size: 1.2rem;
   }
   .footer {
-   flex-shrink: 3;
-    text-align: center;
-    padding: 2.5rem 0;
     font-size: 0.9rem;
     color: #3f1b08;
+    padding-top: 23px;
+    font-family: var(--font-amiri), sans-serif;
+    padding-bottom: 1rem;
   }
 }
 
@@ -303,7 +314,7 @@ a {
 
   
   .subtitle {
-    font-size: 1.3rem; /* Smaller font size to fit on one line */
+    font-size: 1.1rem; /* Smaller font size to fit on one line */
     line-height: 1.4;
     color: #3f1b08;
     margin-top: -0.25rem;
@@ -312,7 +323,7 @@ a {
     padding: 0 0.5rem;
   }
   .contact {
-    font-size: 1/1rem;
+    font-size: 0.7rem;
     text-align: center;
     color: #3f1b08;
     white-space: no-wrap;
@@ -326,7 +337,7 @@ a {
     gap: 1.25rem;
     justify-content: center;
     margin-top: auto; /* Push to bottom of container */
-    margin-bottom: 0.5rem; /* Space between socials and footer */
+    margin-bottom: 1.5rem; /* Space between socials and footer */
   }
 
   .socials img {
