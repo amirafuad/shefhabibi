@@ -230,6 +230,7 @@ a {
   .socials {
     display: flex;
     margin-top: 12rem;
+    gap: 1.2rem; 
     
   }
 
