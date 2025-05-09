@@ -230,13 +230,13 @@ a {
   .socials {
     display: flex;
     margin-top: 12rem;
-    gap: 2rem; 
+    gap: 1.5rem; 
     
   }
 
   .footer {
     margin-top: 0.5rem;
-    padding: 2rem 0;
+    padding: 0.5rem 0;
     font-size: 0.9rem;
     color: #3f1b08;
    
