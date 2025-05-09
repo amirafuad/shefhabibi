@@ -183,7 +183,7 @@ a {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     padding-top: 1rem;
@@ -203,6 +203,7 @@ a {
     line-height: 1.5;
     color: #3f1b08;
     margin-top:-0.5rem;
+     max-width: 90%; /* 👈 add this */
   }
 
   .contact {
