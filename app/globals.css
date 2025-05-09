@@ -40,7 +40,6 @@ a {
 :root {
   --font-amiri: "Amiri", sans-serif;
 }
-
 /* Page background */
 .page-wrapper {
   display: grid;
