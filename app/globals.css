@@ -169,7 +169,7 @@ a {
     height: 100dvh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-image: url("/bg2.png");
     background-size: cover;
     background-position: center top;
