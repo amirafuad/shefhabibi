@@ -212,19 +212,6 @@ a {
     white-space: normal;
   }
 
-  .whatsapp {
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
-  .wa-inline {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    white-space: nowrap;
-  }
 .spacer {
   flex-grow: 1;
 }
