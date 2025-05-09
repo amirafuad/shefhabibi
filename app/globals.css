@@ -298,12 +298,14 @@ a {
   .page-wrapper {
     display: flex;
     flex-direction: column;
+    min-height: 100vh; 
   }
 
   .container {
     flex: 1;
     display: flex;
     flex-direction: column;
+      flex:1;
   }
 
   /* Create a spacer to push content to top and social icons to bottom */
@@ -314,7 +316,7 @@ a {
 
   
   .subtitle {
-    font-size: 1.6rem; /* Smaller font size to fit on one line */
+    font-size: 1.5rem; /* Smaller font size to fit on one line */
     line-height: 1.4;
     color: #3f1b08;
     margin-top: -0.25rem;
