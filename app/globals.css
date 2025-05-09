@@ -176,7 +176,6 @@ a {
     font-family: var(--font-amiri), sans-serif;
     padding: 2rem 1rem;
     box-sizing: border-box;
-    overflow: hidden;
   }
 
   .container {
