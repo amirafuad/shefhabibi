@@ -226,7 +226,9 @@ a {
     width: 100%;
     white-space: nowrap;
   }
-
+.spacer {
+  flex-grow: 1;
+}
   .socials {
     display: flex;
     margin-top:0.5rem;
