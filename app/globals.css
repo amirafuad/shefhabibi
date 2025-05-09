@@ -200,12 +200,12 @@ a {
   }
 
  .subtitle {
- white-space: pre-line; /* Preserve line breaks and wrap */
+    white-space: pre-line; /* Preserve line breaks and wrap */
     font-size: 1.7rem;
     line-height: 1.5;
     color: #3f1b08;
     margin-top: -0.5rem;
-    max-width: 85%; /* Try a slightly smaller max-width */
+    max-width: 100%; /* Try a slightly smaller max-width */
     margin-left: auto;
     margin-right: auto;
     text-align: center; /* Ensure text remains centered */
