@@ -302,22 +302,13 @@ a {
   }
 
   .container {
-    flex: 1;
     display: flex;
     flex-direction: column;
-      flex:1;
-  }
-  /* Create a spacer to push content to top and social icons to bottom */
-  .spacer {
     flex-grow: 1;
     
   } 
-.subtitle::after {
-  content: "";
-  display: block;
-}
   .subtitle {
-    font-size: 1.55rem; /* Smaller font size to fit on one line */
+    font-size: 1.7rem; /* Smaller font size to fit on one line */
     line-height: 1.4;
     color: #3f1b08;
     margin-top: -0.25rem;
