@@ -157,7 +157,7 @@ a {
 }
 
 
-@media screen and (min-device-width: 400px) and (max-device-width: 430px) {
+@media screen and (min-device-width: 400px) and (max-device-width: 460px) {
   html, body {
     height: 100dvh;
     overflow: hidden;
