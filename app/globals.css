@@ -298,11 +298,11 @@ a {
   }
 
   .footer {
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-bottom: 1rem;
     font-size: 0.8rem;
     color: #3f1b08;
-    margin-top: 0; /* Remove margin to keep close to socials */
+    margin-top: 1; /* Remove margin to keep close to socials */
   }
 
 
