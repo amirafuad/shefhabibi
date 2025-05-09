@@ -229,12 +229,12 @@ a {
 
   .socials {
     display: flex;
-    margin-top: 10rem;
+    margin-top: 12rem;
     
   }
 
   .footer {
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     font-size: 0.9rem;
     color: #3f1b08;
    
