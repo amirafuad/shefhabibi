@@ -293,46 +293,81 @@ a {
   }
 }
 
-/* Large phones and small tablets */
-@media (min-width: 481px) and (max-width: 600px) {
-  .wa-inline {
-    font-size: 0.8rem;
-    gap: 0.1rem;
-    white-space: nowrap;
+
+/* iPhones and Small Mobile (320px to 480px) */
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
-  .contact {
-    font-size: 0.8rem;
-    text-align: center;
-    margin-top: -20px;
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
-  .logo {
-    max-width: 250px;
+  /* Create a spacer to push content to top and social icons to bottom */
+  .spacer {
+    flex-grow: 1;
+    min-height: 20px;
   }
 
+  
   .subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem; /* Smaller font size to fit on one line */
+    line-height: 1.4;
+    color: #3f1b08;
+    margin-top: -0.25rem;
+    max-width: 95%;
+    word-wrap: break-word;
+    padding: 0 0.5rem;
   }
-}
+  .contact {
+    font-size: 0.7rem;
+    text-align: center;
+    color: #3f1b08;
+    white-space: no-wrap;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 0 0.5rem;
+  }
+  /* Position social icons just above footer */
+  .socials {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    margin-top: auto; /* Push to bottom of container */
+    margin-bottom: 1.5rem; /* Space between socials and footer */
+  }
+
+  .socials img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #3f1b08;
+    margin-top: 0; /* Remove margin to keep close to socials */
+  }
 
 
-/* Small phones */
+
+/* Extra Small Phones (up to 360px) */
 @media (max-width: 360px) {
   .wa-inline {
     font-size: 0.7rem;
     gap: 0.05rem;
-    white-space: nowrap;
   }
 
   .contact {
     font-size: 0.7rem;
-    text-align: center;
-    margin-top: -10px;
   }
 
   .logo {
-    max-width: 200px;
+    max-width: 180px;
   }
 
   .subtitle {
@@ -342,5 +377,63 @@ a {
   .footer {
     margin-top: auto;
     padding-bottom: 15px;
+    font-size: 0.7rem;
+  }
+
+  .socials {
+    margin-top: 1.5rem; /* Adjust for very small screens */
+  }
+
+  .socials img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .wa-icon {
+    height: 0.8rem;
   }
 }
+
+/* Fix for notched iPhones */
+@supports (padding: max(0px)) {
+  .page-wrapper {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Fix for landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .page-wrapper {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    max-width: 150px;
+    margin: 0.25rem 0;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  .footer {
+    padding: 0.5rem 0;
+  }
+}
+
+
+
+
+
+
+
+
+
