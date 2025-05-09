@@ -266,7 +266,7 @@ a {
 
   
   .subtitle {
-    font-size: 1.1rem; /* Smaller font size to fit on one line */
+    font-size: 1.4rem; /* Smaller font size to fit on one line */
     line-height: 1.4;
     color: #3f1b08;
     margin-top: -0.25rem;
@@ -275,7 +275,7 @@ a {
     padding: 0 0.5rem;
   }
   .contact {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: center;
     color: #3f1b08;
     white-space: no-wrap;
