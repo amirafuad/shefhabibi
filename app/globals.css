@@ -196,19 +196,9 @@ a {
     padding-bottom: 8rem;
     margin-top: 6rem;  }
 }
-  .footer .socials {
-    order: -1;
-    margin-bottom: 1rem;
-    margin-top: 0;
-  }
-
-  .footer p{ /* targeting paragraph inside footer */
-    order: 2; /* pushing the paragraph to the bottom */
-    margin-top:0rem;
-  }
 
   .spacer {
-    min-height: 20px;
+    min-height: 5px;
     flex-grow: 1;
   }
 
