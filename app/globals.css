@@ -150,6 +150,7 @@ a {
     background-image: url("/bg2.png");
     background-size: cover;
     background-position: center top;
+    justify-content: space-between;
   }
 
   .container {
