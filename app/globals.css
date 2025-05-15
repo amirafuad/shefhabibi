@@ -204,6 +204,7 @@ a {
 
   .footer p{ /* targeting paragraph inside footer */
     order: 2; /* pushing the paragraph to the bottom */
+    margin-top:0rem;
   }
 
   .spacer {
