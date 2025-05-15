@@ -12,7 +12,7 @@ body {
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
-   overflow-y: hidden; 
+  
 }
 
 a {
@@ -159,7 +159,7 @@ a {
   .container {
     padding: 1.5rem 1rem;
     padding-top: 1rem;
-    flex-shrink: 1;
+     overflow: auto;
   }
 
   .logo {
@@ -202,8 +202,10 @@ a {
   gap: 1.25rem;
 }
 .footer p {
-  margin: 0;
-  font-size: 0.9rem;
+ color: #3f1b08;
+  font-size: 1rem;
+  font-family: var(--font-amiri), sans-serif;
+  margin-top: 0.5rem;
 }
   .spacer {
     min-height: 5px;
