@@ -159,24 +159,24 @@ a {
 
   .logo {
     max-width: 300px;
-    margin-top: -1rem;
+    margin-top: -2rem;
     margin-bottom: 1rem;
   }
 
   .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     margin-top: -0.25rem;
     max-width: 95%;
   }
 
   .contact {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .socials {
     gap: 1.25rem;
-    margin-bottom: 3rem;
+    margin-bottom: -3rem;
   }
 
   .socials img {
