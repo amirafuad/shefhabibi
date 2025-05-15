@@ -198,14 +198,14 @@ a {
 }
 
 .footer .socials {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   gap: 1.25rem;
 }
 .footer p {
  color: #3f1b08;
   font-size: 1rem;
   font-family: var(--font-amiri), sans-serif;
-  margin-top: -2rem;
+  margin-top: -1rem;
 }
   
 }
