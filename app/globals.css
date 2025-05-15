@@ -202,6 +202,7 @@ a {
     min-height: 5px;
     flex-grow: 1;
   }
+}
 
 /* Tablet (601px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
