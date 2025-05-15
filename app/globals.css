@@ -198,7 +198,7 @@ a {
 }
 
 .footer .socials {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   gap: 1.25rem;
 }
 .footer p {
@@ -207,10 +207,7 @@ a {
   font-family: var(--font-amiri), sans-serif;
   margin-top: 0.5rem;
 }
-  .spacer {
-    min-height: 5px;
-    flex-grow: 1;
-  }
+  
 }
 
 /* Tablet (601px to 900px) */
