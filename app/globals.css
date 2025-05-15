@@ -178,7 +178,7 @@ a {
   .socials {
     gap: 1.25rem;
     margin-top:8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 
   .socials img {
@@ -188,7 +188,6 @@ a {
 
   .footer {
      position: relative;
-  
     text-align: center;
     font-size: 1rem;
     color: #3f1b08;
@@ -197,6 +196,11 @@ a {
     padding-bottom: 8rem;
     margin-top: 6rem;  }
 }
+  .footer .socials {
+    order: -1; /* Move social icons to the top */
+    margin-bottom: 1rem; /* Add space below social icons */
+    margin-top: 0;
+  }
 
 /* Tablet (601px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
