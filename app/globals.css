@@ -177,7 +177,7 @@ a {
 
   .socials {
     gap: 1.25rem;
-    margin-top:1rem;
+    margin-top:3rem;
     margin-bottom: 1rem;
   }
 
@@ -187,8 +187,13 @@ a {
   }
 
   .footer {
-    padding-bottom: 2rem;
-    margin-top: -1rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  color: #3f1b08;
+  font-family: var(--font-amiri), sans-serif;
+  flex-shrink: 0;
+  margin-top: -1.5rem;
   }
   .spacer{
     min-height: 20px;
