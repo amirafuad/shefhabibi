@@ -178,7 +178,7 @@ a {
   .socials {
     gap: 1.25rem;
     margin-top:10rem;
-    margin-bottom: -3rem;
+    margin-bottom: 1rem;
   }
 
   .socials img {
@@ -193,9 +193,10 @@ a {
     color: #3f1b08;
     font-family: var(--font-amiri), sans-serif;
     flex-shrink: 0;
-    padding-bottom: 8rem;
-    margin-top: 10rem;  }
-}
+    bottom: 0rem;
+    margin-top: 10rem;  
+  }
+
 
   .spacer {
     min-height: 5px;
