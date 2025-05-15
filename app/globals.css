@@ -1,26 +1,301 @@
-@import "tailwindcss";
+/* Global Styles (Applied to all screen sizes) */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+   overflow-y: hidden; 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("/fonts/Zain-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-amiri: "Amiri", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  font-family: var(--font-amiri), sans-serif;
+  flex: 1 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.logo {
+  margin-bottom: 2px;
+  margin-top: 15px;
+  width: 100%; /* Make logo responsive */
+  max-width: 400px; /* Limit maximum size */
+  height: auto;
+}
+
+
+.subtitle {
+  color: #3f1b08;
+  margin: 1rem 0;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 0.1rem;
+  font-family: var(--font-amiri), sans-serif;
+  white-space: normal; /* Allows wrapping on smaller screens */
+}
+
+.contact {
+  color: #3f1b08;
+  line-height: 2.5;
+  font-family: var(--font-amiri), sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  white-space: normal;
+}
+
+.whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem;
+  vertical-align: middle;
+  flex-direction: column; /* Stack on small screens */
+  align-items: center;
+}
+
+.wa-icon {
+  height: 1.1rem;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.wa-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.19rem;
+  justify-content: center; /* Center on small screens */
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.socials a {
+  transition: transform 0.3s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #3f1b08;
+  font-family: var(--font-amiri), sans-serif;
+  flex-shrink: 0;
+  margin-top: -1.5rem;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+
+
+/* --- Breakpoints --- */
+
+/* Mobile (0px to 600px) */
+@media (max-width: 600px) {
+  .page-wrapper {
+    background-image: url("/bg2.png");
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+    padding-top: 1rem;
+  }
+
+  .logo {
+    max-width: 300px;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-top: -0.25rem;
+    max-width: 95%;
+  }
+
+  .contact {
+    font-size: 1.1rem;
+  }
+
+  .socials {
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .socials img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer {
+    padding-bottom: 8rem;
+    margin-top: -6rem;
+  }
+  .spacer{
+    min-height: 20px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Tablet (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .page-wrapper {
+    background-image: url("/bg2.png");
+    background-size: cover;
+    background-position: center 65%;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+    padding-top: 1rem;
+  }
+
+  .logo {
+    max-width: 300px;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: -0.5rem;
+    max-width: 100%;
+  }
+
+  .contact {
+    font-size: 1.6rem;
+  }
+
+  .socials {
+    gap: 1.5rem;
+  }
+
+  .footer {
+    padding: 2.5rem 0;
+  }
+}
+
+/* Desktop (901px to 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .page-wrapper {
+    background-image: url("/bg.png");
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  .container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .logo {
+    margin-bottom: 2px;
+    margin-top: 15px;
+    max-width: 300px;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .contact {
+    font-size: 1rem;
+  }
+
+  .socials {
+    gap: 2rem;
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+}
+
+/* Large Desktop (1201px and up) */
+@media (min-width: 1201px) {
+  .page-wrapper {
+    background-image: url("/bg.png");
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  .container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .logo {
+    margin-bottom: 2px;
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .contact {
+    font-size: 1rem;
+  }
+
+  .socials {
+    gap: 2rem;
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
 }
