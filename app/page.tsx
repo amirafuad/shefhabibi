@@ -30,7 +30,9 @@ export default function Home() {
               </a>
             </div>
           </div>
-
+         </div>
+          
+        <footer className="footer">
           <div className="socials">
             <a href="https://www.instagram.com/shefhabibi" target="_blank" rel="noopener noreferrer">
               <Image src="/instagram.png" alt="Instagram" width={30} height={30} />
@@ -42,11 +44,8 @@ export default function Home() {
               <Image src="/tiktok.png" alt="TikTok" width={30} height={30} />
             </a>
           </div>
-        </div>
-
-        {/* ✅ Footer moved outside container */}
-        <footer className="footer">
-          © {new Date().getFullYear()} Shef Habibi. All rights reserved.
+      
+         <p>© {new Date().getFullYear()} Shef Habibi. All rights reserved.</p> 
         </footer>
       </div>
     
