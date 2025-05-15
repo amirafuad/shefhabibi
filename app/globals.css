@@ -188,14 +188,14 @@ a {
 
   .footer {
      position: relative;
-    top: 10px; /* Adjust this value as needed */
+  
     text-align: center;
     font-size: 1rem;
     color: #3f1b08;
     font-family: var(--font-amiri), sans-serif;
     flex-shrink: 0;
-    margin-top: -2rem;
-  }
+    padding-bottom: 8rem;
+    margin-top: 6rem;  }
 }
 
 /* Tablet (601px to 900px) */
