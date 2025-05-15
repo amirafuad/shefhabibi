@@ -198,8 +198,8 @@ a {
 }
   .footer .socials {
     order: -1; /* Move social icons to the top */
-    margin-bottom: 1rem; /* Add space below social icons */
-    margin-top: 0;
+    margin-bottom: -1rem; /* Add space below social icons */
+    margin-top: 0rem;
   }
 
 /* Tablet (601px to 900px) */
