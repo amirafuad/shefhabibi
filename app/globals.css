@@ -197,9 +197,18 @@ a {
     margin-top: 6rem;  }
 }
   .footer .socials {
-    order: -1; /* Move social icons to the top */
-    margin-bottom: -3rem; /* Add space below social icons */
-    margin-top: 0rem;
+    order: -1;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .footer p{ /* targeting paragraph inside footer */
+    order: 2; /* pushing the paragraph to the bottom */
+  }
+
+  .spacer {
+    min-height: 20px;
+    flex-grow: 1;
   }
 
 /* Tablet (601px to 900px) */
