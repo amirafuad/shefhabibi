@@ -178,7 +178,7 @@ a {
   .socials {
     gap: 1.25rem;
     margin-top:10rem;
-    margin-bottom: 0rem;
+    margin-bottom: -3rem;
   }
 
   .socials img {
@@ -194,7 +194,7 @@ a {
     font-family: var(--font-amiri), sans-serif;
     flex-shrink: 0;
     padding-bottom: 8rem;
-    margin-top: 6rem;  }
+    margin-top: 10rem;  }
 }
 
   .spacer {
