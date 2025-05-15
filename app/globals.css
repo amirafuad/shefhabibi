@@ -198,7 +198,10 @@ a {
   margin-bottom: 8rem;
   gap: 1.25rem;
 }
-
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
   .spacer {
     min-height: 5px;
     flex-grow: 1;
