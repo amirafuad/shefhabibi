@@ -197,7 +197,7 @@ a {
   .footer .socials {
     order: -1;
     margin-bottom: 1rem;
-    margin-top: 0;
+    margin-top: 0.5rem;
   }
 
   .footer p{
