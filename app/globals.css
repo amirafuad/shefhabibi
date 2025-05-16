@@ -214,8 +214,8 @@ a {
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
   .page-wrapper {
     background-image: url("/bg2.png");
-    background-size: contain;
-    background-position: center 95%;
+    background-size: cover;
+    background-position: center 45%;
     display: flex;
     flex-direction: column; /* Ensure page-wrapper is a flex column */
     justify-content: flex-start;
