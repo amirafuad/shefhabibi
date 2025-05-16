@@ -215,7 +215,7 @@ a {
   .page-wrapper {
     background-image: url("/bg2.png");
     background-size: contain;
-    background-position: top 75%;
+    background-position: center 95%;
     display: flex;
     flex-direction: column; /* Ensure page-wrapper is a flex column */
     justify-content: flex-start;
