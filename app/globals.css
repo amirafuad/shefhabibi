@@ -284,7 +284,7 @@ a {
 }
 
 /* Tablet (601px to 900px) - Landscape Mode */
-@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape) {
+@media (min-width: 601px) and (max-width: 900px)  {
   .page-wrapper {
     background-image: url("/bg2.png");
     background-size: contain;
@@ -368,19 +368,24 @@ a {
   }
 
   .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .contact {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .socials {
     gap: 2rem;
   }
+  .socials img {
+    width: 27px;
+    height: 27px;
+  }
 
   .footer {
     padding: 1rem 0;
+    font-size: 1.3rem;
   }
 }
 
