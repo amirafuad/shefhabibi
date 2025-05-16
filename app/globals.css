@@ -364,15 +364,15 @@ a {
   .logo {
     margin-bottom: 2px;
     margin-top: 15px;
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .subtitle {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .contact {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .socials {
