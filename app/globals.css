@@ -215,7 +215,7 @@ a {
   .page-wrapper {
     background-image: url("/bg2.png");
     background-size: cover;
-    background-position: center 63%;
+    background-position: center 68%;
     display: flex;
     flex-direction: column; /* Ensure page-wrapper is a flex column */
     justify-content: flex-start;
@@ -269,6 +269,7 @@ a {
     flex-direction: column; /* Stack items in footer column */
     align-items: center; /* Center items horizontally */
     order: 5;
+    
   }
 
   .footer .socials {
@@ -280,6 +281,7 @@ a {
   .footer p {
     order: 2;
     margin-top: 0;
+    font-size:1.3rem;
   }
 }
 
