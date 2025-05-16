@@ -211,11 +211,12 @@ a {
 }
 
 /* Tablet (601px to 900px) */
+/* Tablet (601px to 900px) - Portrait Mode */
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
   .page-wrapper {
     background-image: url("/bg2.png");
     background-size: cover;
-    background-position: center 65%;
+    background-position: top center;
     display: flex;
     flex-direction: column; /* Ensure page-wrapper is a flex column */
     justify-content: flex-start;
@@ -232,29 +233,31 @@ a {
 
   .logo {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    order: 1;
+    order: 1; /* Changed order to 1 */
   }
 
   .subtitle {
     font-size: 1.75rem;
     line-height: 1.5;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     max-width: 100%;
     white-space: normal;
+    order: 2; /* Changed order to 2 */
   }
 
   .contact {
     font-size: 1.6rem;
+    order: 3;
   }
 
   .socials {
     gap: 1.5rem;
     margin-bottom: 1rem;
-    order: 2;
+    order: 4;
   }
 
   .footer {
@@ -263,7 +266,7 @@ a {
     display: flex; /* Added for flexbox in footer */
     flex-direction: column; /* Stack items in footer column */
     align-items: center; /* Center items horizontally */
-    order: 3;
+    order: 5;
   }
 
   .footer .socials {
@@ -273,6 +276,74 @@ a {
   }
 
   .footer p {
+    order: 2;
+    margin-top: 0;
+  }
+}
+
+/* Tablet (601px to 900px) - Landscape Mode */
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape) {
+  .page-wrapper {
+    background-image: url("/bg2.png");
+    background-size: cover;
+    background-position: center 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    order: 1; /* Changed order to 1 */
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: -0.5rem;
+    max-width: 100%;
+    white-space: normal;
+    order: 2; /* Changed order to 2 */
+  }
+
+  .contact {
+    font-size: 1.6rem;
+    order: 3;
+  }
+
+  .socials {
+    gap: 1.5rem;
+    margin-bottom: 0;
+    order: 4;
+  }
+
+  .footer {
+    padding: 2.5rem 0;
+    display: flex; /* Added for flexbox in footer */
+    flex-direction: column; /* Stack items in footer column */
+    align-items: center; /* Center items horizontally */
+    order: 5;
+  }
+
+  .footer .socials {
+    order: -1;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+  .footer p{
     order: 2;
     margin-top: 0;
   }
