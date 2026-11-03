@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shef Habibi
 
-## Getting Started
+A landing page for Shef Habibi, a restaurant serving authentic Middle Eastern cuisine. It introduces the brand, lets customers pre-order through WhatsApp, and links to the restaurant's social media.
 
-First, run the development server:
+**Live site:** https://shefhabibi.com
+
+## Features
+
+- Responsive layout that works on desktop and mobile
+- One-tap pre-order button that opens WhatsApp
+- Links to Instagram, Facebook and TikTok
+- Optimized images with `next/image`
+
+## Tech
+
+- [Next.js](https://nextjs.org) (App Router) and React
+- TypeScript
+- ESLint
+- Deployed on [Vercel](https://vercel.com)
+
+## Getting started
 
 ```bash
+git clone https://github.com/amirafuad/shefhabibi.git
+cd shefhabibi
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser. The page updates as you edit `app/page.tsx`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/      Pages and layout (Next.js App Router)
+public/   Static assets such as the logo and social media icons
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Every push to `main` can be deployed automatically through Vercel. To build locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## About this project
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built as an individual project to practice building and shipping a real site for a small business with Next.js.
